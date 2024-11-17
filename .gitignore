@@ -1,0 +1,17 @@
+# Ignore log files
+*.log
+
+# Ignore node_modules
+node_modules/
+
+# Ignore environment files
+.env
+
+# Ignore compiled files
+*.class
+*.o
+*.exe
+
+# Ignore system files
+.DS_Store
+Thumbs.db
