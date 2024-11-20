@@ -10,7 +10,7 @@
       crossorigin="anonymous"
     />
 
-    <title>Dream Careers</title>
+    <title>Faris Muhammed</title>
     <style>
       #banner {
         width: 100%;
@@ -20,13 +20,18 @@
     </style>
   </head>
   <body>
+
+      {% include 'navbar.html' %}
+    
+    
+  
     <div class="container">
       <h1 class="text-center mt-4 mb-9" style="color: rgb(80, 80, 80)">
-        <strong>Dream Careers</strong>
+        <strong>Faris Muhammed</strong>
       </h1>
       <img class="img-fluid mt-4" id="banner" src="static/background.jpg" />
       <h2 class="text-center mt-4 mb-4" style="color: rgb(100, 100, 100)">
-        About Dream Careers
+        About Me
       </h2>
 
       <p class="lead">
@@ -41,7 +46,7 @@
       </p>
 
       <h2 class="text-center" style="color: rgb(100, 100, 100)">
-        Job Openings
+        Projects
       </h2>
       <div>{% for job in jobs %} {% include 'jobitem.html' %} {% endfor %}</div>
 
