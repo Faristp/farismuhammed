@@ -1,40 +1,41 @@
 from flask import Flask, jsonify, render_template
 
 app = Flask(__name__)
-JOBS = [{
+PROJECTS = [{
     'id': 1,
-    'title': 'Data Analyst',
-    'location': 'Bengaluru, India',
-    'salary': 'Rs. 10,00,000'
+    'title': 'Vidya AI',
+    'Description': 'An AI Tutor for one on one Learning Experience',
+    'image':'/static/vidyaAI.jpg'
+    
 }, {
     'id': 2,
-    'title': 'Data Scientist',
-    'location': 'Delhi, India',
-    'salary': 'Rs. 15,00,000'
+    'title': 'Tic-Tac-Toe',
+    'Description': 'A human Size board Game , Programmed with Aurduino',
+    'image':'/static/tic-tac-toe.jpg'
+    
 }, {
     'id': 3,
-    'title': 'Frontend Engineer',
-    'location': 'Remote',
-    'salary': 'Rs. 12,00,000'
+    'title': 'Careers Page',
+    'Description': 'A Database Management project',
+    'image':'/static/careers.jpg'
+    
 }, {
     'id': 4,
-    'title': 'Backend Engineer',
-    'location': 'San Francisco, USA',
-    'salary': '$120,000'
-}, {
-    'id': 5,
-    'title': 'Software Engineer',
-    'location': 'San Francisco, USA'
-}]
+    'title': 'flappy bird',
+    'Description': 'Flappy bird game played by NEAT',
+    'image':'/static/flappybird.jpg'
+    
+}
+]
 
 
 @app.route("/")
 def hello_faris():
-  return render_template('home.html', jobs=JOBS)
+  return render_template('home.html', projects=PROJECTS)
 
 @app.route("/api/jobs")
 def list_jobs():
-    return jsonify(JOBS)
+    return jsonify(PROJECTS)
 
 if __name__ == "__main__":
   app.run(host='127.0.0.1', debug=True)

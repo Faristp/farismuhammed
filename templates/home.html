@@ -35,23 +35,26 @@
       </h2>
 
       <p class="lead">
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean
-        pellentesque lacinia convallis. Aenean commodo ultrices tempor. Aenean
-        scelerisque egestas bibendum. Nunc eget diam nulla. Cras congue, est et
-        posuere vestibulum, elit neque vulputate nibh, sollicitudin semper erat
-        odio ut diam. Duis scelerisque neque vitae diam feugiat vehicula. Duis
-        in turpis sed est dignissim volutpat. Nam ut cursus dui. Aliquam iaculis
-        tellus quis sem porttitor, in auctor sem mattis. Fusce tempor vitae
-        lorem id semper. Donec accumsan massa non nulla cursus accumsan.
+        A Tech enthusiast with a passion for creating innovative solutions and 
+        exploring the world of artificial intelligence, simulation, and software 
+        developments. My interests range from building intelligent race car agents
+        to Software Applications.
+        When I’m not coding, I’m likely diving into the latest trends in AI and DevOps
+        
       </p>
+      
 
       <h2 class="text-center" style="color: rgb(100, 100, 100)">
         Projects
       </h2>
-      <div>{% for job in jobs %} {% include 'jobitem.html' %} {% endfor %}</div>
+      <div class="row">
+        {% for project in projects %} {% include 'jobitem.html' %} {% endfor %}
+      </div>
 
-      <div class="text-center">
-        <button class="btn btn-primary btn-lg">Contact Us</button>
+      <div class="text-center pt-5 pb-4">
+        <button class="btn btn-primary btn-lg ">Contact Me</button>
+      
+
       </div>
     </div>
   </body>
