@@ -24,12 +24,12 @@
       {% include 'navbar.html' %}
     
     
-  
-    <div class="container">
       <h1 class="text-center mt-4 mb-9" style="color: rgb(80, 80, 80)">
         <strong>Faris Muhammed</strong>
       </h1>
       <img class="img-fluid mt-4" id="banner" src="/static/banner.jpg" />
+    <div class="container">
+      
       <h2 class="text-center mt-4 mb-4" style="color: rgb(100, 100, 100)">
         About Me
       </h2>
@@ -50,10 +50,16 @@
       <div class="row">
         {% for project in projects %} {% include 'jobitem.html' %} {% endfor %}
       </div>
-
+      <h2 class="text-center mt-4" style="color: rgb(100, 100, 100)">
+        Skills
+      </h2>
+      <div>
+        python
+      </div>
+      
       <div class="text-center pt-5 pb-4">
         <button class="btn btn-primary btn-lg ">Contact Me</button>
-      
+      </div>
 
       </div>
     </div>
