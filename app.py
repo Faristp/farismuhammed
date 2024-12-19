@@ -13,13 +13,8 @@ PROJECTS = [{
     'Description': 'A human Size board Game , Programmed with Aurduino',
     'image':'/static/tic-tac-toe.jpg'
     
-}, {
-    'id': 3,
-    'title': 'Careers Page',
-    'Description': 'A Database Management project',
-    'image':'/static/careers.jpg'
-    
-}, {
+},
+{
     'id': 4,
     'title': 'flappy bird',
     'Description': 'Flappy bird game played by NEAT',
